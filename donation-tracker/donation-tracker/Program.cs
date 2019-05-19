@@ -13,7 +13,8 @@ namespace donation_tracker
             string donorName;
             string donorEmail;
             int fiscalYear;
-            float donationAmount;
+            string correctAmt;
+            double totalDonation;
 
             Console.WriteLine("What is the donor's name?");
             donorName = Console.ReadLine();
@@ -26,30 +27,38 @@ namespace donation_tracker
             fiscalYear = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Donations are received in hundreds, fifties, twenties, tens, fives, ones, and quarters.");
-            Console.WriteLine("How many hundreds would you like to donate?");
-            int numHundreds = int.Parse(Console.ReadLine()) * 100;
 
-            Console.WriteLine("How many fifties would you like to donate?");
-            int numFifties = int.Parse(Console.ReadLine()) * 50;
+            do
+            {
+                Console.WriteLine("How many hundreds would you like to donate?");
+                int numHundreds = int.Parse(Console.ReadLine()) * 100;
 
-            Console.WriteLine("How many twenties would you like to donate?");
-            int numTwenties = int.Parse(Console.ReadLine()) * 20;
+                Console.WriteLine("How many fifties would you like to donate?");
+                int numFifties = int.Parse(Console.ReadLine()) * 50;
 
-            Console.WriteLine("How many tens would you like to donate?");
-            int numTens = int.Parse(Console.ReadLine()) * 10;
+                Console.WriteLine("How many twenties would you like to donate?");
+                int numTwenties = int.Parse(Console.ReadLine()) * 20;
 
-            Console.WriteLine("How many fives would you like to donate?");
-            int numFives = int.Parse(Console.ReadLine()) * 5;
+                Console.WriteLine("How many tens would you like to donate?");
+                int numTens = int.Parse(Console.ReadLine()) * 10;
 
-            Console.WriteLine("How many ones would you like to donate?");
-            int numOnes = int.Parse(Console.ReadLine());
+                Console.WriteLine("How many fives would you like to donate?");
+                int numFives = int.Parse(Console.ReadLine()) * 5;
 
-            Console.WriteLine("How many quarters would you like to donate?");
-            double numQuarters = int.Parse(Console.ReadLine()) *.25;
+                Console.WriteLine("How many ones would you like to donate?");
+                int numOnes = int.Parse(Console.ReadLine());
 
-            double totalDonation = numHundreds + numFifties + numTwenties + numTens + numFives + numOnes + numQuarters;
+                Console.WriteLine("How many quarters would you like to donate?");
+                double numQuarters = int.Parse(Console.ReadLine()) * .25;
 
-            Console.WriteLine("The total donation is $" +totalDonation+ ". Is that correct?");
+                totalDonation = numHundreds + numFifties + numTwenties + numTens + numFives + numOnes + numQuarters;
+
+                Console.WriteLine("The total donation is $" + totalDonation + ". Is that correct?");
+                correctAmt = Console.ReadLine().ToLower();
+            } while(correctAmt == "no");
+
+            Console.WriteLine("Thank you for your donation. Here is your receipt:");
+            Console.WriteLine("Name: " + donorName + "\nEmail: " + donorEmail + "\nFiscal Year: " + fiscalYear + "\nTotal Donation Amount: $" + totalDonation);
 
             Console.ReadKey();
         }
