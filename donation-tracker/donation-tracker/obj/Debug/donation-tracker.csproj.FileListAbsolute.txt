@@ -1,7 +1,0 @@
-C:\Users\Ali\Documents\Visual Studio 2017\Projects\C# Revisit\donation-tracker\donation-tracker\bin\Debug\donation-tracker.exe.config
-C:\Users\Ali\Documents\Visual Studio 2017\Projects\C# Revisit\donation-tracker\donation-tracker\bin\Debug\donation-tracker.exe
-C:\Users\Ali\Documents\Visual Studio 2017\Projects\C# Revisit\donation-tracker\donation-tracker\bin\Debug\donation-tracker.pdb
-C:\Users\Ali\Documents\Visual Studio 2017\Projects\C# Revisit\donation-tracker\donation-tracker\obj\Debug\donation-tracker.csproj.CoreCompileInputs.cache
-C:\Users\Ali\Documents\Visual Studio 2017\Projects\C# Revisit\donation-tracker\donation-tracker\obj\Debug\donation-tracker.exe
-C:\Users\Ali\Documents\Visual Studio 2017\Projects\C# Revisit\donation-tracker\donation-tracker\obj\Debug\donation-tracker.pdb
-C:\Users\Ali\Documents\Visual Studio 2017\Projects\C# Revisit\donation-tracker\donation-tracker\obj\Debug\donation-tracker.csprojResolveAssemblyReference.cache
